@@ -19,7 +19,7 @@ const App = () => {
       try {
         const token = localStorage.getItem("token");
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/user/me",
+          "https://backend-task-puu2.onrender.com/api/v1/user/me",
           {
             headers: {
               Authorization: `Bearer ${token}`

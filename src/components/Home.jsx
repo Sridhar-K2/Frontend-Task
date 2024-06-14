@@ -20,7 +20,7 @@ const Home = ({ isAuthenticated, tasks, setTasks, taskTitle }) => {
     const token=localStorage.getItem("token")
     await axios
       .delete(//`http://localhost:4000/api/v1/task/delete/${id}`,
-      `http://localhost:4000/api/v1/task/delete/${id}` ,
+      `https://backend-task-puu2.onrender.com/api/v1/task/delete/${id}` ,
       {
         // withCredentials: true,
         headers:{Authorization: `Bearer ${token}`}

@@ -18,7 +18,7 @@ const UpdateTaskModal = ({
     const getSingleTask = async () => {
       const token =localStorage.getItem("token")
       await axios
-        .get(`http://localhost:4000/api/v1/task/single/${id}`,   {
+        .get(`https://backend-task-puu2.onrender.com/api/v1/task/single/${id}`,   {
           headers: {
             Authorization: `Bearer ${token}`
           },//withCredentials: true
@@ -46,7 +46,7 @@ const UpdateTaskModal = ({
     console.log(token);
     await axios
       .put(
-        `http://localhost:4000/api/v1/task/update/${id}`,
+        `https://backend-task-puu2.onrender.com/api/v1/task/update/${id}`,
         {
           title,
           description,
