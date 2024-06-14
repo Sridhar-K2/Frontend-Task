@@ -16,10 +16,9 @@ function Login({ isAuthenticated, setIsAuthenticated }) {
     axios
       .post(
         "https://backend-task-puu2.onrender.com/api/v1/user/login",
-       
         { email, password },
         {
-          withCredentials: true,
+          // withCredentials: true,
           headers: { "Content-Type": "application/json" },
         }
       )
